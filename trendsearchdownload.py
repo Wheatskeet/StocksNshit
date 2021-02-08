@@ -197,42 +197,6 @@ def check(thelist):
         os.remove("C:/Users/C24Andrew.Wheatley/PycharmProjects/pythonProject/Stock Stuff/Renamed/"+f)
 
 
-"""
-start_time=time.time()
-downloadfile("Hexindai", driver2)
-print(time.time()-start_time)
-renamefile()
-print(time.time()-start_time)
-check()
-print(time.time()-start_time)
 
-
-
-
-
-
-
-time.sleep(2700)
-            fromaddr = '18awheatley@gmail.com'
-            toaddrs = '18awheatley@gmail.com'
-            username = '18awheatley@gmail.com'
-            password = 'Blackerr1!'
-            server = smtplib.SMTP('smtp.gmail.com:587')
-            server.ehlo()
-            server.starttls()
-            server.login(username, password)
-            s=""
-            for p in thelist:
-                s=s+str(p)+"\n"
-            msg = "\r\n".join([
-                "From: 18awheatley@gmail.com",
-                'To: 18awheatley@gmail.com',
-                "Subject: Stock Review For The Day",
-                "",
-                s
-            ])
-            server.sendmail(fromaddr, toaddrs, msg)
-            server.quit()
-"""
 #trendcheck("Arbutus Biopharma", driver2, 1)
 

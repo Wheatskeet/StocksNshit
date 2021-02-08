@@ -284,7 +284,7 @@ def run():
     threading.Timer(4.0,run).start()
     monitor()
 
-login("andrewwheatley@comcast.net","Blackerr1!",driver)
+
 createdrivers()
 #openpage()
 run()

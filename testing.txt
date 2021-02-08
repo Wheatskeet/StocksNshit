@@ -1,0 +1,100 @@
+Sorrento Therapeutics Inc. (SRNE)	187.2M	7.94	1.18	17.51
+General Electric Co. (GE)	160.7M	6.14	0.65	11.84
+Ford Motor Co. (F)	80.3M	5.25	0.35	7.20
+Aurora Cannabis Inc. (ACB)	66.4M	17.77	6.57	58.67
+Norwegian Cruise Line Holdings Ltd. (NCLH)	53.8M	12.78	1.86	17.03
+Moderna Inc. (MRNA)	50.6M	83.68	16.99	25.47
+American Airlines Group Inc. (AAL)	43.8M	9.69	0.65	7.19
+Delta Air Lines Inc. (DAL)	42.2M	21.42	2.23	11.59
+Carnival Corp. (CCL)	40.1M	14.48	1.70	13.30
+United Airlines Holdings Inc. (UAL)	39.3M	23.28	3.36	16.87
+Bank of America Corp. (BAC)	33.9M	22.52	1.07	5.03
+Advanced Micro Devices Inc. (AMD)	27.4M	54.47	0.27	0.50
+Walt Disney Co. (DIS)	25.1M	116.59	7.54	6.91
+Sirius XM Holdings Inc. (SIRI)	24.1M	5.46	0.12	2.15
+Uber Technologies Inc. (UBER)	24.0M	34.55	2.08	6.41
+Inovio Pharmaceuticals Inc. (INO)	24.0M	14.01	0.58	4.32
+Marathon Oil Corp. (MRO)	23.9M	6.10	0.49	8.82
+Occidental Petroleum Corp. (OXY)	23.4M	14.96	1.14	8.21
+Boeing Co. (BA)	22.7M	131.52	11.52	9.60
+Wells Fargo & Co. (WFC)	21.3M	24.95	1.59	6.82
+Macy's Inc. (M)	21.0M	5.35	0.04	0.75
+GSX Techedu Inc. ADR (GSX)	18.9M	33.02	-2.41	-6.80
+Citigroup Inc. (C)	18.7M	44.60	2.69	6.41
+Halliburton Co. (HAL)	17.7M	11.10	1.28	12.96
+Energy Transfer LP (ET)	17.7M	7.86	0.67	9.24
+Petroleo Brasileiro S/A ADR (PBR)	17.3M	6.70	0.60	9.84
+Novavax Inc. (NVAX)	17.2M	57.68	14.05	32.21
+Royal Caribbean Cruises Ltd. (RCL)	17.2M	43.77	6.32	16.94
+Vale S.A. ADR (VALE)	17.0M	8.91	0.64	7.74
+Snap Inc. (SNAP)	17.0M	17.67	0.57	3.36
+MGM Resorts International (MGM)	16.8M	14.92	1.07	7.75
+NIO Inc. ADR (NIO)	16.2M	3.62	0.25	7.26
+Southwest Airlines Co. (LUV)	15.7M	26.70	2.83	11.86
+Nokia Corp. ADR (NOK)	15.6M	3.66	0.21	6.39
+Spirit Airlines Inc. (SAVE)	15.5M	9.72	1.71	21.29
+Microsoft Corp. (MSFT)	15.4M	185.19	2.03	1.11
+Apple Inc. (AAPL)	15.4M	314.52	6.81	2.21
+AT&T Inc. (T)	15.3M	29.42	1.11	3.94
+Freeport-McMoRan Inc. (FCX)	15.3M	9.26	0.79	9.26
+JD.com Inc. ADR (JD)	14.8M	54.49	3.64	7.16
+Zynga Inc. Cl A (ZNGA)	14.0M	8.00	-0.04	-0.56
+Host Hotels & Resorts Inc. (HST)	13.8M	11.68	1.63	16.15
+Hertz Global Holdings Inc. (HTZ)	13.6M	3.21	0.57	21.50
+Cisco Systems Inc. (CSCO)	13.6M	45.00	0.72	1.64
+OPKO Health Inc. (OPK)	13.4M	2.74	0.12	4.68
+JPMorgan Chase & Co. (JPM)	13.2M	89.78	3.88	4.50
+Itau Unibanco Holding S/A ADR (ITUB)	13.0M	3.92	0.17	4.81
+Exxon Mobil Corp. (XOM)	12.9M	44.76	2.76	6.58
+Ambev S.A. ADR (ABEV)	12.5M	2.14	0.13	6.19
+General Motors Co. (GM)	11.9M	24.71	2.08	9.19
+Apache Corp. (APA)	11.9M	11.98	1.37	12.91
+DraftKings Inc. Cl A (DKNG)	11.8M	30.00	0.77	2.63
+Alibaba Group Holding Ltd. ADR (BABA)	11.5M	213.28	9.60	4.71
+Annaly Capital Management Inc. (NLY)	11.5M	6.14	0.34	5.77
+Forescout Technologies Inc. (FSCT)	11.3M	22.26	-7.26	-24.61
+Yamana Gold Inc. (AUY)	11.3M	5.03	-0.27	-4.83
+Barrick Gold Corp. (GOLD)	11.2M	27.04	-0.99	-3.55
+JetBlue Airways Corp. (JBLU)	11.2M	8.72	0.48	5.83
+Coty Inc. Cl A (COTY)	11.1M	3.50	0.21	6.54
+Penn National Gaming Inc. (PENN)	11.1M	21.80	2.45	12.66
+VEREIT Inc. (VER)	10.9M	4.94	0.43	9.65
+Kinross Gold Corp. (KGC)	10.7M	7.12	-0.32	-4.23
+NVIDIA Corp. (NVDA)	10.5M	350.74	11.12	3.27
+Micron Technology Inc. (MU)	10.0M	45.68	1.26	2.85
+Facebook Inc. Cl A (FB)	9.9M	212.80	1.92	0.91
+Cassava Sciences Inc. (SAVA)	9.9M	2.40	0.28	13.21
+Clovis Oncology Inc. (CLVS)	9.7M	9.27	-0.42	-4.38
+Cronos Group Inc. (CRON)	9.6M	5.85	0.32	5.79
+Coca-Cola Co. (KO)	9.5M	44.92	1.66	3.84
+ViacomCBS Inc. Cl B (VIAC)	9.3M	18.98	1.68	9.68
+Square Inc. Cl A (SQ)	9.1M	77.92	-2.34	-2.92
+Comcast Corp. Cl A (CMCSA)	9.1M	37.68	1.76	4.91
+Gap Inc. (GPS)	9.0M	7.78	0.18	2.43
+Nordic American Tankers Ltd. (NAT)	8.9M	4.86	-0.17	-3.48
+Tilray Inc. Cl 2 (TLRY)	8.9M	8.15	0.38	4.89
+Petroleo Brasileiro S/A ADR A (PBR.A)	8.8M	6.38	0.47	7.95
+BP PLC ADR (BP)	8.8M	23.72	1.90	8.69
+Banco Bradesco S/A Pref ADR (BBD)	8.7M	3.09	0.15	5.10
+Gilead Sciences Inc. (GILD)	8.7M	75.35	-0.91	-1.19
+L Brands Inc. (LB)	8.7M	12.62	1.76	16.21
+Hecla Mining Co. (HL)	8.6M	3.07	0.08	2.77
+Peloton Interactive Inc. (PTON)	8.6M	44.96	-3.46	-7.15
+Cleveland-Cliffs Inc. (CLF)	8.6M	4.40	0.30	7.32
+Pfizer Inc. (PFE)	8.5M	37.83	0.07	0.19
+Twitter Inc. (TWTR)	8.4M	29.67	0.67	2.31
+Kohl's Corp. (KSS)	8.2M	18.57	1.02	5.84
+Park Hotels & Resorts Inc. (PK)	8.0M	8.70	1.39	19.02
+Schlumberger Ltd. (SLB)	8.0M	17.64	1.69	10.56
+Invesco Mortgage Capital Inc. (IVR)	7.6M	2.88	0.20	7.46
+Vipshop Holdings Ltd. ADR (VIPS)	7.4M	16.42	-0.43	-2.55
+Boston Scientific Corp. (BSX)	7.4M	36.49	1.66	4.77
+ArcelorMittal ADR (MT)	7.1M	9.26	0.74	8.75
+Kinder Morgan Inc. (KMI)	7.1M	15.39	0.55	3.71
+New Residential Investment Corp. (NRZ)	7.1M	6.08	0.17	2.96
+Raytheon Technologies Corp. (RTX)	7.0M	56.79	4.06	7.70
+Charles Schwab Corp. (SCHW)	7.0M	33.58	1.02	3.12
+Canopy Growth Corp. (CGC)	6.9M	16.47	0.61	3.82
+United States Steel Corp. (X)	6.9M	7.72	0.56	7.74
+TJX Cos. (TJX)	6.8M	49.55	2.38	5.06
+Qualcomm Inc. (QCOM)	6.8M	78.94	3.17	4.18

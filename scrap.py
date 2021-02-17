@@ -7,7 +7,9 @@ import time
 import collections
 from trendsearchdownload import trendcheck
 from trendsearchdownload import check
+from trendsearchdownload import check2
 from trendsearchdownload import downloadfile
+from trendsearchdownload import downloadfile2
 from trendsearchdownload import renamefile
 from threading import Thread
 from datetime import datetime, timedelta
@@ -266,13 +268,72 @@ def func6():
 
 key = True
 
+def khanfunc1():
+    global thelist
+    with open('C:/Users/C24Andrew.Wheatley/PycharmProjects/pythonProject/Stock Stuff/we-out-here.txt') as f:
+        content = f.readlines()
+    x = 1
+    while x<=len(content):
+        try:
+            terms = downloadfile2(content[x].strip("\n"))
+            check2(thelist, terms)
+        except Exception as e:
+            print(e)
+            if str(e) == "HTTP Error 429: unknown":
+                time.sleep(10)
+                print("slow down")
+        x = x + 3
+        if x >= len(content):
+            x = 1
+
+def khanfunc2():
+    global thelist
+    with open('C:/Users/C24Andrew.Wheatley/PycharmProjects/pythonProject/Stock Stuff/we-out-here.txt') as f:
+        content = f.readlines()
+    x = 2
+    while x<=len(content):
+        try:
+            terms = downloadfile2(content[x].strip("\n"))
+            check2(thelist, terms)
+        except Exception as e:
+            print(e)
+            if str(e) == "HTTP Error 429: unknown":
+                time.sleep(10)
+                print("slow down")
+        x = x + 3
+        if x >= len(content):
+            x = 2
+
+def khanfunc3():
+    global thelist
+    with open('C:/Users/C24Andrew.Wheatley/PycharmProjects/pythonProject/Stock Stuff/we-out-here.txt') as f:
+        content = f.readlines()
+    x = 3
+    while x<=len(content):
+        try:
+            terms = downloadfile2(content[x].strip("\n"))
+            check2(thelist, terms)
+        except Exception as e:
+            print(e)
+            if str(e) == "HTTP Error 429: unknown":
+                time.sleep(10)
+                print("slow down")
+        x = x + 3
+        print(x)
+        if x >= len(content):
+            x = 3
+
+
+
+
+
 def run():
     #start_time = time.time()
-    Thread(target=func1).start()
-    Thread(target=func2).start()
-    Thread(target=func3).start()
+    Thread(target=khanfunc1).start()
+    Thread(target=khanfunc2).start()
+    Thread(target=khanfunc3).start()
     #Thread(target=func4).start()
-    Thread(target=func6).start()
+    #Thread(target=func6).start()
 
 
 with open('C:/Users/C24Andrew.Wheatley/PycharmProjects/pythonProject/Stock Stuff/we-out-here.txt') as f:

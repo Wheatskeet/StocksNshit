@@ -327,10 +327,101 @@ def downloadfile2(keyword):
     tz = 420
     
     parameters = {'req': req, 'token':token, 'tz':tz}
-    print(parameters)
     r = br.open(mechanize.Request(url, data = parameters, method='GET'))
     
-    return r.read().decode('utf-8')
+    return r.read().decode('utf-8'), keyword
     
-#trendcheck("Arbutus Biopharma", driver2, 1)
+def check2(thelist,file):
+    rank={}
+    date = str(datetime.datetime.now())[8:10]
+    curhour = str(datetime.datetime.now())[11:13]
+
+    reader = [x.split(',') for x in file[0].split("\n")]
+    reader = reader[0:len(reader)-1]
+    reader.pop(0)
+    reader.pop(0)
+    reader.pop(0)
+    for row in reader:
+        if row[1]=="<1":
+            num=1
+        else:
+            num = int(row[1])
+        rank[row[0]] = num
+    ranklist = sorted(rank.items(), reverse=True, key=lambda x: int(x[1]))
+    zeros = 0
+    for elem in ranklist:
+        if int(elem[1]) < 15:
+            zeros += 1
+
+    if zeros > (0.85 * len(ranklist)):
+        if int(ranklist[1][1]) < 50:
+            t = ranklist[0][0][11:16]
+            hour = t[0:2]
+
+            if int(hour) >= int(curhour) - 6:
+                if int((ranklist[0][0][8:10])) == int(date) and int((ranklist[1][0][8:10])) == int(date):
+                    if file[1] not in thelist:
+                        thelist.append(file[1])
+                    print(thelist,"yeet3")
+                    fromaddr = '18awheatley@gmail.com'
+
+                    toaddresses = ['18awheatley@gmail.com',
+                     'ameenmkhan02@gmail.com']
+
+                    username = '18awheatley@gmail.com'
+                    password = 'Blackerr1!'
+                    server = smtplib.SMTP("smtp.gmail.com", 587)
+                    server.ehlo()
+                    server.starttls()
+                    server.ehlo()
+                    server.login(username, password)
+                    msg = "\r\n".join([
+                        "From: ",
+                        'To: ',
+                        "Subject: Stock Review For The Day",
+                        "",
+                        thelist[-1],str(datetime.datetime.now())
+                    ])
+                    for i in toaddresses:
+                        server.sendmail(fromaddr, i, msg)
+                    server.quit()
+
+
+        else:
+            t = ranklist[0][0][11:16]
+            hour = t[0:2]
+
+            t2 = ranklist[1][0][11:16]
+            hour2 = t2[0:2]
+
+            if (int(hour2) == int(hour) + 1 or int(hour2) == int(hour) - 1 or int(hour2) == int(hour) + 2 or int(
+                    hour2) == int(hour) - 2):
+                if int(hour) >= int(curhour) - 6:
+                    if int((ranklist[0][0][8:10])) == int(date) and int((ranklist[1][0][8:10])) == int(date):
+                        if file[1] not in thelist:
+                            thelist.append(file[1])
+                        print(thelist,"yeet4")
+                        fromaddr = '18awheatley@gmail.com'
+
+                        toaddresses = ['18awheatley@gmail.com',
+                                       'ameenmkhan02@gmail.com']
+                        username = '18awheatley@gmail.com'
+                        password = 'Blackerr1!'
+                        server = smtplib.SMTP("smtp.gmail.com", 587)
+                        server.ehlo()
+                        server.starttls()
+                        server.ehlo()
+                        server.login(username, password)
+                        msg = "\r\n".join([
+                            "From: ",
+                            'To: ',
+                            "Subject: Stock Review For The Day",
+                            "",
+                            thelist[-1],str(datetime.datetime.now())
+                        ])
+                        for i in toaddresses:
+                            server.sendmail(fromaddr, i, msg)
+                        server.quit()
+
+
 

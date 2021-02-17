@@ -23,13 +23,17 @@ import os
 import glob
 import time
 
-
+import mechanize
+import http.cookiejar
+import json
+import requests
 #driver_path =("C://Users/18awh/geckodriver.exe")
 #profile = "C:/Users/18awh/AppData/Roaming/Mozilla/Firefox/Profiles/k52cvmgk.default-release"
 #driver2 = webdriver.Firefox(executable_path=driver_path,firefox_profile=profile)
 
 
 trenddata={}
+br = None
 
 def trendcheck(stockname,drive, num):
     global t
@@ -290,7 +294,43 @@ def check(thelist):
         file.close()
         os.remove("C:/Users/C24Andrew.Wheatley/PycharmProjects/pythonProject/Stock Stuff/Renamed/"+f)
 
-
-
+def setup_mechanize():
+    global br
+    br = mechanize.Browser()
+    cj = http.cookiejar.LWPCookieJar()
+    br.set_cookiejar(cj)
+    br.set_handle_equiv(True)
+    br.set_handle_gzip(True)
+    br.set_handle_redirect(True)
+    br.set_handle_referer(True)
+    br.set_handle_robots(False)
+    br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+    br.addheaders = [('User-agent', 'Chrome')]
+    
+def downloadfile2(keyword):
+    #get token
+    global br
+    if br is None:
+        setup_mechanize()
+    
+    url = 'https://trends.google.com/trends/api/widgetdata/multiline/csv'
+    #time = get_time()
+    try:    
+        x = br.open('https://trends.google.com/trends/api/explore?hl=en-US&tz=420&req=%7B%22comparisonItem%22:%5B%7B%22keyword%22:%22' + keyword + '%22,%22geo%22:%22US%22,%22time%22:%22now+7-d%22%7D%5D,%22category%22:0,%22property%22:%22%22%7D&tz=420')
+    except:
+        x = br.open('https://trends.google.com/trends/api/explore?hl=en-US&tz=420&req=%7B%22comparisonItem%22:%5B%7B%22keyword%22:%22' + keyword + '%22,%22geo%22:%22US%22,%22time%22:%22now+7-d%22%7D%5D,%22category%22:0,%22property%22:%22%22%7D&tz=420')
+    string = x.read().decode('utf-8')
+    token = string[string.index('token')+8:string[string.index('token')+8:].index('\"')+string.index('token')+8]
+    time = string[string.index('time')+7:string[string.index('time')+7:].index('\"')+string.index('time')+7]
+    time = time.replace('\\\\','\\')
+    req = {'time': time, 'resolution': 'HOUR', 'locale': 'en-US', 'comparisonItem': [{'geo': {'country': 'US'}, 'complexKeywordsRestriction': {'keyword': [{'type': 'BROAD', 'value': keyword}]}}], 'requestOptions': {'property': '', 'backend': 'CM', 'category': 0}}
+    tz = 420
+    
+    parameters = {'req': req, 'token':token, 'tz':tz}
+    print(parameters)
+    r = br.open(mechanize.Request(url, data = parameters, method='GET'))
+    
+    return r.read().decode('utf-8')
+    
 #trendcheck("Arbutus Biopharma", driver2, 1)
 

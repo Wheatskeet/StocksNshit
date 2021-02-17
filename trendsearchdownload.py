@@ -80,9 +80,35 @@ def trendcheck(stockname,drive, num):
                     
                     if int(hour)>=int(curhour)-6:
                         if int((ranklist[0][0][8:10])) == int(date) and int((ranklist[1][0][8:10])) == int(date):
-                            print(stockname)
+                            print(stockname,"yeet1")
+                            fromaddr = '18awheatley@gmail.com'
 
-                else:
+                            toaddresses = ['18awheatley@gmail.com']
+                            # 'ethan30smith@gmail.com', 'grantgovrik@gmail.com',
+                            #                                                'steveniles75@gmail.com', 'mk.48.keith@gmail.com',
+                            # 'ameenmkhan02@gmail.com'
+                            username = '18awheatley@gmail.com'
+                            password = 'Blackerr1!'
+                            server = smtplib.SMTP("smtp.gmail.com", 587)
+                            server.ehlo()
+                            server.starttls()
+                            server.ehlo()
+                            server.login(username, password)
+                            msg = "\r\n".join([
+                                "From: ",
+                                'To: ',
+                                "Subject: Stock Review For The Day",
+                                "",
+                                stockname, str(datetime.datetime.now())
+                            ])
+                            for i in toaddresses:
+                                server.sendmail(fromaddr, i, msg)
+                            server.quit()
+
+
+
+
+            else:
                     t = ranklist[0][0][11:16]
                     hour = t[0:2]
 
@@ -92,7 +118,30 @@ def trendcheck(stockname,drive, num):
                     if(int(hour2)==int(hour)+1 or int(hour2)==int(hour)-1 or int(hour2)==int(hour)+2 or int(hour2)==int(hour)-2):
                         if int(hour)>=int(curhour)-6:
                             if int((ranklist[0][0][8:10])) == int(date) and int((ranklist[1][0][8:10])) == int(date):
-                                print(stockname)
+                                print(stockname,"yeet2")
+                                fromaddr = '18awheatley@gmail.com'
+
+                                toaddresses = ['18awheatley@gmail.com']
+                                # 'ethan30smith@gmail.com', 'grantgovrik@gmail.com',
+                                #                                                'steveniles75@gmail.com', 'mk.48.keith@gmail.com',
+                                # 'ameenmkhan02@gmail.com'
+                                username = '18awheatley@gmail.com'
+                                password = 'Blackerr1!'
+                                server = smtplib.SMTP("smtp.gmail.com", 587)
+                                server.ehlo()
+                                server.starttls()
+                                server.ehlo()
+                                server.login(username, password)
+                                msg = "\r\n".join([
+                                    "From: ",
+                                    'To: ',
+                                    "Subject: Stock Review For The Day",
+                                    "",
+                                    stockname,str(datetime.datetime.now())
+                                ])
+                                for i in toaddresses:
+                                    server.sendmail(fromaddr, i, msg)
+                                server.quit()
 
             try:
                 f.close()
@@ -174,8 +223,31 @@ def check(thelist):
 
                         if int(hour) >= int(curhour) - 6:
                             if int((ranklist[0][0][8:10])) == int(date) and int((ranklist[1][0][8:10])) == int(date):
-                                thelist.append(f[0:-4])
-                                print(thelist)
+                                if f[0:-4] not in thelist:
+                                    thelist.append(f[0:-4])
+                                print(thelist,"yeet3")
+                                fromaddr = '18awheatley@gmail.com'
+
+                                toaddresses = ['18awheatley@gmail.com',
+                                 'ameenmkhan02@gmail.com']
+
+                                username = '18awheatley@gmail.com'
+                                password = 'Blackerr1!'
+                                server = smtplib.SMTP("smtp.gmail.com", 587)
+                                server.ehlo()
+                                server.starttls()
+                                server.ehlo()
+                                server.login(username, password)
+                                msg = "\r\n".join([
+                                    "From: ",
+                                    'To: ',
+                                    "Subject: Stock Review For The Day",
+                                    "",
+                                    thelist[-1],str(datetime.datetime.now())
+                                ])
+                                for i in toaddresses:
+                                    server.sendmail(fromaddr, i, msg)
+                                server.quit()
 
 
                     else:
@@ -189,8 +261,30 @@ def check(thelist):
                                 hour2) == int(hour) - 2):
                             if int(hour) >= int(curhour) - 6:
                                 if int((ranklist[0][0][8:10])) == int(date) and int((ranklist[1][0][8:10])) == int(date):
-                                    thelist.append(f[0:-4])
-                                    print(thelist)
+                                    if f[0:-4] not in thelist:
+                                        thelist.append(f[0:-4])
+                                    print(thelist,"yeet4")
+                                    fromaddr = '18awheatley@gmail.com'
+
+                                    toaddresses = ['18awheatley@gmail.com',
+                                                   'ameenmkhan02@gmail.com']
+                                    username = '18awheatley@gmail.com'
+                                    password = 'Blackerr1!'
+                                    server = smtplib.SMTP("smtp.gmail.com", 587)
+                                    server.ehlo()
+                                    server.starttls()
+                                    server.ehlo()
+                                    server.login(username, password)
+                                    msg = "\r\n".join([
+                                        "From: ",
+                                        'To: ',
+                                        "Subject: Stock Review For The Day",
+                                        "",
+                                        thelist[-1],str(datetime.datetime.now())
+                                    ])
+                                    for i in toaddresses:
+                                        server.sendmail(fromaddr, i, msg)
+                                    server.quit()
         except:
             pass
         file.close()

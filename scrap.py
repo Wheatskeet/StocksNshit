@@ -228,33 +228,17 @@ def func6():
             for g in thelist:
                 if g in checks:
                     thelist.remove(g)
-            fromaddr = ''
 
-            toaddresses = ['']
-            username = ''
-            password = ''
-            server = smtplib.SMTP('smtp.gmail.com', 587)
-            server.ehlo()
-            server.starttls()
-            server.login(username, password)
-            s = '\n '.join(thelist)
-            msg = "\r\n".join([
-                "From: ",
-                'To: ',
-                "Subject: Stock Review For The Day",
-                "",
-                s
-            ])
 
             joinedlist = checks + thelist
+            """
             f = open('C:/Users/18awh/Downloads/templist.txt', 'w')
             for i in joinedlist:
                 f.write("%s\n" % i)
             copyfile('C:/Users/18awh/Downloads/templist.txt','C:/Users/18awh/Downloads/weeklylist.txt')
+            """
 
-            for i in toaddresses:
-                server.sendmail(fromaddr, i, msg)
-            server.quit()
+
             if zero1 == True and zero2 == True and zero3 == True:
                 print("all done for today")
                 time.sleep(5400)
